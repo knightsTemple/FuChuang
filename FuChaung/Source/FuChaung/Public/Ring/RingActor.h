@@ -71,35 +71,35 @@ protected:
 	virtual void Tick(float DeltaTime) override;
 
 	// 环形方块组件
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	UInstancedStaticMeshComponent* RingBlocks;
 
 	// 环形主半径
-	UPROPERTY(EditDefaultsOnly, Category="Settings", meta=(ClampMin="100"))
+	UPROPERTY(EditAnywhere, Category="Settings", meta=(ClampMin="100"))
 	float TorusMajorRadius = 500.0f;
 
 	// 环形次半径
-	UPROPERTY(EditDefaultsOnly, Category="Settings", meta=(ClampMin="10"))
+	UPROPERTY(EditAnywhere, Category="Settings", meta=(ClampMin="10"))
 	float TorusMinorRadius = 50.0f;
 
 	// 总方块数量
-	UPROPERTY(EditDefaultsOnly, Category="Settings")
+	UPROPERTY(EditAnywhere, Category="Settings")
 	int32 TotalBlocks = 120;
 
 	// 影响范围
-	UPROPERTY(EditDefaultsOnly, Category="Settings")
+	UPROPERTY(EditAnywhere, Category="Settings")
 	float InfluenceRange = 10.0f;
 
 	// 抬升高度
-	UPROPERTY(EditDefaultsOnly, Category="Settings")
+	UPROPERTY(EditAnywhere, Category="Settings")
 	float RaiseHeight = 50.0f;
 
 	// 最大弹跳高度
-	UPROPERTY(EditDefaultsOnly, Category="Settings")
+	UPROPERTY(EditAnywhere, Category="Settings")
 	float MaxBounceHeight = 50.0f;
 
 	// 弹跳速度
-	UPROPERTY(EditDefaultsOnly, Category="Settings", meta=(ClampMin="0.1"))
+	UPROPERTY(EditAnywhere, Category="Settings", meta=(ClampMin="0.1"))
 	float BounceSpeed = 300.0f;
 
 private:

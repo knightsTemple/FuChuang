@@ -45,7 +45,7 @@ void ARingActor::GenerateRingBlocks()
     PositionDataArray.Empty();
     RingBlocks->ClearInstances();
 
-    UStaticMesh* CubeMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Engine/BasicShapes/Cube.Cube"));
+    UStaticMesh* CubeMesh = LoadObject<UStaticMesh>(nullptr, TEXT("/Game/Ring_model.Ring_model"));
     if (!CubeMesh) return;
 
     RingBlocks->SetStaticMesh(CubeMesh);
